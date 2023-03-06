@@ -4,6 +4,7 @@ import models.deeplabv3plus as deeplabv3plus
 from models.ddrnet.ddernet import DDRNet
 from models.deeplabv3plus.utils import set_bn_momentum
 from models.deeplabv3plus._deeplab import convert_to_separable_conv
+from models.rtformer.rtformer import RTFormer
 # def get_model(model_name, weights, weights_backbone, num_classes, aux_loss):
 #     model = torchvision.models.get_model(
 #             model_name,
@@ -54,4 +55,5 @@ def get_model(model_name, num_classes, weights=None, weights_backbone=None, aux_
     return model
 
 if __name__ == '__main__':
-    model = get_model('deeplabv3plus_resnet101', 3)
+    # model = get_model('deeplabv3plus_resnet101', 3)
+    
